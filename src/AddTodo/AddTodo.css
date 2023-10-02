@@ -1,0 +1,50 @@
+.AddTodoWrapper {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.AddTodoInput {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #2E3847;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 44px;
+  flex: 1;
+}
+
+.AddTodoInput::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+.AddTodoButton {
+  border-radius: 8px;
+  border: none;
+  margin: 0;
+  padding: 0 16px;
+  height: 44px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #45AEF5;
+  transition: all 0.15s ease;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.AddTodoButton:hover {
+  background-color: #59b9f9;
+}
+
+.AddTodoButton:active {
+  background-color: #2b8ed1;
+}
+
+.AddTodoButton:disabled {
+  background-color: #378AC2;
+  color: rgba(255, 255, 255, 0.4);
+}

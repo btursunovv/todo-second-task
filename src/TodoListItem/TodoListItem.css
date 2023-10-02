@@ -1,0 +1,48 @@
+.todoListItem {
+  display: flex;
+  align-items: center;
+}
+
+.todoListItem .content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.todoListItem:hover .removeButton {
+  opacity: 1;
+}
+
+.todoListItem .removeButton {
+  padding-right: 5px;
+  cursor: pointer;
+  color: #45aef5;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.todoCheck {
+  background-color: #364052;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #46536b;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.todoCheck.checked {
+  background-color: #39cc83;
+  border-color: #2faa6c;
+}
+
+.todoLabel {
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.todoLabel.checked {
+  text-decoration: line-through;
+  color: #8994a3;
+}
